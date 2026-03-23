@@ -1,0 +1,389 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #e7ebf0;
+  color: #222;
+  font-family: Tahoma, Verdana, sans-serif;
+  font-size: 13px;
+  line-height: 1.35;
+}
+a {
+  color: #1f4d7a;
+  text-decoration: none;
+}
+img {
+  border: 0;
+}
+form, p, h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+.wap-body {
+  max-width: 760px;
+  margin: 0 auto;
+  background: #fff;
+  min-height: 100vh;
+  box-shadow: 0 0 0 1px #d7dde4;
+}
+.top {
+  background: #4e698f;
+  color: #fff;
+  padding: 4px 6px;
+  border-bottom: 1px solid #344b68;
+}
+.top a {
+  color: #fff;
+}
+.logo-panel {
+  background: #677fb2;
+  color: #fff;
+  padding: 6px;
+  border-bottom: 1px solid #536895;
+}
+.logo {
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.meta-line {
+  font-size: 10px;
+  color: #dce5f2;
+  margin-top: 2px;
+}
+.icon-box {
+  display: inline-block;
+  min-width: 24px;
+  padding: 2px 4px;
+  text-align: center;
+  background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.20);
+  border-radius: 2px;
+}
+.navi-theme {
+  background: #dae1e8;
+  color: #45688e;
+  padding: 5px 6px;
+  border-bottom: 1px solid #adb8c3;
+  font-size: 11px;
+}
+.navi-theme a {
+  color: #2b587a;
+}
+.wrapper {
+  margin: 0;
+}
+.header.grey {
+  background: #e4e9ee;
+  color: #425f82;
+  padding: 6px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #c1cad3;
+  font-size: 12px;
+  font-weight: bold;
+}
+.block,
+.list,
+.panel,
+.post,
+.profile-card,
+.chat-box,
+.game-box,
+.voice-box,
+.market-box {
+  padding: 7px 6px;
+  border-bottom: 1px solid #e4e8ec;
+  background: #fff;
+}
+.list-item,
+.link-btn,
+.link-line {
+  display: block;
+  padding: 7px 6px;
+  border-bottom: 1px solid #e5e9ef;
+  color: #222;
+  background: #fff;
+}
+.list-item:active,
+.link-btn:active,
+.link-line:active {
+  background: #f5f8fb;
+}
+.hero {
+  background: #f7faff;
+  padding: 8px 6px;
+  border-bottom: 1px solid #d7e1ed;
+}
+.hero h1 {
+  font-size: 15px;
+  color: #365476;
+}
+.hero .desc {
+  font-size: 12px;
+  color: #61758a;
+  margin-top: 5px;
+}
+.hero-actions {
+  margin-top: 6px;
+}
+.btn,
+.btn2,
+.btn3,
+.btn-flat,
+input.form_button,
+input.form,
+select.form,
+textarea.form,
+button.form_button {
+  font-family: Tahoma, Verdana, sans-serif;
+  font-size: 12px;
+}
+.btn,
+input.form_button,
+button.form_button {
+  display: inline-block;
+  padding: 5px 9px;
+  background: #677fb2;
+  color: #fff;
+  border: 1px solid #536895;
+  border-radius: 2px;
+}
+.btn2 {
+  display: inline-block;
+  padding: 5px 9px;
+  background: #5ba33a;
+  color: #fff;
+  border: 1px solid #4a842f;
+  border-radius: 2px;
+}
+.btn3 {
+  display: inline-block;
+  padding: 5px 9px;
+  background: #fff7e5;
+  color: #855800;
+  border: 1px solid #ddb24f;
+  border-radius: 2px;
+}
+.btn-flat {
+  display: inline-block;
+  padding: 5px 9px;
+  background: #f5f7fa;
+  color: #365476;
+  border: 1px solid #cad5df;
+  border-radius: 2px;
+}
+.form,
+textarea.form,
+select.form,
+input.form {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 6px;
+  margin-top: 4px;
+  border: 1px solid #b8c4cf;
+  background: #fff;
+  border-radius: 2px;
+  color: #222;
+}
+textarea.form {
+  min-height: 72px;
+}
+.row-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.row-table td {
+  vertical-align: top;
+}
+.badge {
+  display: inline-block;
+  padding: 1px 5px;
+  border-radius: 7px;
+  font-size: 9px;
+  background: #ef5350;
+  color: #fff;
+}
+.badge-green {
+  background: #4caf50;
+}
+.badge-blue {
+  background: #5c6bc0;
+}
+.badge-gold {
+  background: #d49b00;
+}
+.tip {
+  background: #fff8d7;
+  border: 1px solid #e9ce66;
+  padding: 6px;
+  margin: 6px;
+  font-size: 12px;
+}
+.tip-blue {
+  background: #eef5ff;
+  border-color: #b8d1ef;
+}
+.chip {
+  display: inline-block;
+  padding: 2px 5px;
+  border: 1px solid #ced8e1;
+  background: #f5f8fb;
+  color: #385777;
+  font-size: 10px;
+  margin: 0 4px 4px 0;
+}
+.price {
+  color: #c62828;
+  font-size: 16px;
+  font-weight: bold;
+}
+.grey {
+  color: #6c7886;
+}
+.small {
+  font-size: 11px;
+}
+.tiny {
+  font-size: 10px;
+}
+.right {
+  float: right;
+}
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+.avatar,
+.thumb,
+.square-icon {
+  width: 52px;
+  height: 52px;
+  line-height: 52px;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  background: #5f7ea1;
+  border-radius: 3px;
+  display: inline-block;
+}
+.avatar {
+  border-radius: 26px;
+}
+.thumb-small {
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+}
+.stat-grid {
+  width: 100%;
+  border-collapse: collapse;
+}
+.stat-grid td {
+  width: 33.33%;
+  text-align: center;
+  border-right: 1px solid #e6ebef;
+  padding: 6px 2px;
+}
+.stat-grid td.last {
+  border-right: 0;
+}
+.stat-num {
+  display: block;
+  color: #32557a;
+  font-size: 17px;
+  font-weight: bold;
+}
+.product-line,
+.thread-line,
+.chat-line,
+.delivery-line,
+.game-line,
+.order-line,
+.review-line {
+  display: block;
+  padding: 7px 6px;
+  border-bottom: 1px solid #e5eaef;
+}
+.divider {
+  height: 1px;
+  background: #e7ebef;
+  margin: 6px 0;
+}
+.progress {
+  height: 7px;
+  background: #e6edf3;
+  border: 1px solid #d4dee7;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: 4px;
+}
+.progress span {
+  display: block;
+  height: 7px;
+  background: #5fae40;
+}
+.mono {
+  font-family: monospace;
+}
+.tabs {
+  background: #f7f9fb;
+  border-top: 1px solid #edf2f7;
+  border-bottom: 1px solid #d4dde6;
+}
+.tabs a,
+.tabs span {
+  display: inline-block;
+  padding: 6px;
+  border-right: 1px solid #dbe4ec;
+  font-size: 11px;
+}
+.tabs .current {
+  background: #fff;
+  color: #355476;
+  font-weight: bold;
+}
+.footer {
+  background: #dae1e8;
+  border-top: 1px solid #adb8c3;
+  color: #5b6d7f;
+  font-size: 11px;
+  padding: 8px 6px;
+}
+.footer a {
+  color: #2b587a;
+}
+.grid2 {
+  display: flex;
+  gap: 6px;
+}
+.grid2 .col {
+  flex: 1;
+}
+.checkbox-line,
+.radio-line {
+  display: block;
+  margin-top: 4px;
+}
+.notice {
+  padding: 6px;
+  background: #fdfefe;
+  border-left: 3px solid #5b7ea3;
+  margin-top: 5px;
+}
+.quote {
+  background: #f6f9fc;
+  border: 1px solid #e0e6ed;
+  padding: 6px;
+  margin-top: 5px;
+}
+.center {
+  text-align: center;
+}
+.market-meta {
+  margin-top: 3px;
+}
+@media (max-width: 520px) {
+  .grid2 {
+    display: block;
+  }
+}
