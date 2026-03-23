@@ -1,0 +1,397 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #e7edf2;
+  color: #23384a;
+  font-family: Tahoma, Verdana, sans-serif;
+  font-size: 13px;
+  line-height: 1.45;
+}
+a { color: #2d5a86; text-decoration: none; }
+img { border: 0; }
+form { margin: 0; padding: 0; }
+p { margin: 0 0 8px 0; }
+h1, h2, h3, h4, h5, h6 { margin: 0; font-size: 13px; }
+.wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  background: #fff;
+  min-height: 100vh;
+  border-left: 1px solid #cfd8e1;
+  border-right: 1px solid #cfd8e1;
+}
+.top-notice {
+  background: #fff7c5;
+  border-bottom: 1px solid #e1cf66;
+  padding: 6px 8px;
+  color: #594c00;
+  font-size: 11px;
+}
+.logo-panel {
+  background: #fdfefe;
+  border-bottom: 1px solid #d4dce5;
+  padding: 7px 8px;
+}
+.logo-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #486989;
+  letter-spacing: 0.5px;
+}
+.logo-sub {
+  font-size: 10px;
+  color: #76889b;
+  margin-top: 2px;
+}
+.navi-theme {
+  background: #667fb2;
+  color: #fff;
+  padding: 5px 8px;
+  border-bottom: 1px solid #4e628d;
+}
+.navi-theme a { color: #fff; }
+.main-nav a {
+  display: inline-block;
+  margin-right: 9px;
+  margin-bottom: 3px;
+  font-size: 12px;
+}
+.main-nav b { color: #ffef9c; }
+.lc_br {
+  background: #f2f5f8;
+  border-bottom: 1px solid #dae2ea;
+  padding: 4px 8px;
+  color: #6e8194;
+  font-size: 11px;
+}
+.wrapper { padding: 0 0 8px 0; }
+.header.grey {
+  background: #dbe3ea;
+  color: #46688d;
+  border-top: 1px solid #edf2f6;
+  border-bottom: 1px solid #b7c5d1;
+  padding: 6px 8px;
+  font-weight: bold;
+}
+.block, .pad, .panel {
+  padding: 8px;
+}
+.panel {
+  background: #fafcff;
+  border-bottom: 1px solid #e1e8ef;
+}
+.list, .list-simple {
+  background: #fff;
+}
+.link,
+.list-item {
+  display: block;
+  padding: 8px;
+  border-bottom: 1px solid #e4ebf1;
+  color: #23384a;
+}
+.link:active,
+.list-item:active,
+.link:hover,
+.list-item:hover { background: #f7fafc; }
+.link-btn {
+  background: #f9fbfd;
+}
+.return {
+  display: block;
+  padding: 8px;
+  color: #2d5a86;
+}
+.badge,
+.badge-red,
+.badge-green,
+.badge-gold {
+  display: inline-block;
+  padding: 1px 5px;
+  border-radius: 8px;
+  font-size: 10px;
+  vertical-align: middle;
+}
+.badge { background: #dbe6f3; color: #35526f; }
+.badge-red { background: #d94242; color: #fff; }
+.badge-green { background: #4c9d3a; color: #fff; }
+.badge-gold { background: #efb11f; color: #fff; }
+.price {
+  color: #ca2e22;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 4px 0;
+}
+.grey { color: #728395; }
+.tiny { font-size: 10px; }
+.center { text-align: center; }
+.right { text-align: right; }
+.small { font-size: 11px; }
+.flex-row {
+  display: flex;
+  gap: 8px;
+}
+.flex-col { flex: 1; }
+.tile-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  padding: 8px;
+}
+.stat-box,
+.soft-box,
+.ad-card,
+.voice-card,
+.game-card,
+.profile-card,
+.kpi-box {
+  background: #fff;
+  border: 1px solid #d9e2ea;
+  border-radius: 4px;
+  padding: 8px;
+}
+.kpi-box strong,
+.stat-box strong,
+.profile-card strong {
+  display: block;
+  color: #2d5a86;
+  font-size: 16px;
+}
+.hero-box {
+  padding: 10px 8px;
+  background: #eef6ff;
+  border-bottom: 1px solid #d8e6f3;
+}
+.hero-box h1 {
+  font-size: 16px;
+  color: #2d5a86;
+  margin-bottom: 5px;
+}
+.btn,
+.form_button,
+.button,
+.url-btn,
+.btn-soft,
+.btn-green,
+.btn-grey {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #aebdcb;
+  border-radius: 3px;
+  background: #f7fbff;
+  color: #274a69;
+  cursor: pointer;
+  font-size: 12px;
+}
+.btn,
+.form_button,
+.button { background: #6a82b5; border-color: #526690; color: #fff; }
+.btn-green { background: #5da73b; border-color: #49852f; color: #fff; }
+.btn-grey { background: #eef2f5; border-color: #c8d2dc; color: #435b74; }
+.btn-block { display: block; width: 100%; box-sizing: border-box; text-align: center; }
+.form,
+input[type="text"],
+input[type="search"],
+select,
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #bcc8d5;
+  border-radius: 3px;
+  background: #fff;
+  color: #23384a;
+  font-size: 12px;
+}
+textarea { min-height: 70px; resize: vertical; }
+label { display: block; margin-bottom: 8px; }
+.row-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.row-table td {
+  vertical-align: top;
+  padding: 0;
+}
+.thumb {
+  width: 52px;
+  height: 52px;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 52px;
+  font-weight: bold;
+  color: #fff;
+  background: #6a82b5;
+}
+.avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 28px;
+  text-align: center;
+  line-height: 56px;
+  font-weight: bold;
+  color: #fff;
+  background: #55739a;
+}
+.chips { margin-top: 4px; }
+.chip {
+  display: inline-block;
+  margin: 0 4px 4px 0;
+  padding: 2px 6px;
+  border: 1px solid #d2dce7;
+  background: #f1f6fb;
+  color: #4a6987;
+  border-radius: 10px;
+  font-size: 10px;
+}
+.delivery-list div,
+.meta-list div,
+.topic-meta div { margin-bottom: 3px; }
+.notice-yellow,
+.notice-blue,
+.notice-green {
+  padding: 8px;
+  margin: 8px;
+  border-radius: 4px;
+  border: 1px solid #d7c769;
+  background: #fff9cd;
+}
+.notice-blue { background: #edf6ff; border-color: #a9c8e7; }
+.notice-green { background: #effbea; border-color: #a7d29a; }
+.feed-comment,
+.message-bubble,
+.forum-post,
+.delivery-card,
+.reward-item,
+.quest-item,
+.saved-filter,
+.review-item,
+.mini-line {
+  background: #f7fafc;
+  border: 1px solid #e0e8f0;
+  border-radius: 4px;
+  padding: 6px;
+  margin-top: 6px;
+}
+.message-bubble.user { border-left: 3px solid #6a82b5; }
+.message-bubble.seller { border-left: 3px solid #4c9d3a; }
+.message-bubble.system { border-left: 3px solid #efb11f; }
+.progress {
+  height: 8px;
+  background: #e4ebf1;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.progress span {
+  display: block;
+  height: 8px;
+  background: #58a23d;
+}
+.footer-nav {
+  background: #dbe3ea;
+  border-top: 1px solid #b6c5d2;
+  padding: 8px;
+  text-align: center;
+}
+.footer-nav a { margin: 0 5px; }
+.site-bottom {
+  padding: 8px;
+  color: #6e8194;
+  font-size: 10px;
+  text-align: center;
+}
+.story-strip {
+  white-space: nowrap;
+  overflow-x: auto;
+  padding: 8px;
+  border-bottom: 1px solid #e2e9f0;
+}
+.story-item {
+  display: inline-block;
+  width: 70px;
+  vertical-align: top;
+  margin-right: 8px;
+  text-align: center;
+  font-size: 10px;
+  color: #687b8d;
+}
+.story-badge {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 4px auto;
+  border-radius: 10px;
+  border: 2px solid #5da73b;
+  background: #fff;
+  color: #55739a;
+  line-height: 56px;
+  font-weight: bold;
+}
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #dce4ec;
+}
+.tabs a,
+.tabs span {
+  flex: 1;
+  text-align: center;
+  padding: 7px 6px;
+  border-right: 1px solid #dce4ec;
+  background: #f5f8fb;
+  color: #4c6780;
+}
+.tabs a:last-child,
+.tabs span:last-child { border-right: 0; }
+.tabs .active { background: #fff; font-weight: bold; color: #2d5a86; }
+.bottom-menu {
+  position: sticky;
+  bottom: 0;
+  background: #f8fbfd;
+  border-top: 1px solid #d5dfe8;
+  text-align: center;
+  padding: 5px 0;
+}
+.bottom-menu a {
+  display: inline-block;
+  width: 15.8%;
+  font-size: 10px;
+  color: #5b738b;
+}
+.bottom-menu span {
+  display: block;
+  font-size: 15px;
+  color: #45688e;
+}
+.inline-menu a { margin-right: 8px; }
+.table-metrics td {
+  width: 25%;
+  text-align: center;
+  border-right: 1px solid #e1e8ef;
+  padding: 8px 3px;
+}
+.table-metrics td:last-child { border-right: 0; }
+.search-tools {
+  background: #f9fbfd;
+  border-bottom: 1px solid #e2e9f0;
+  padding: 8px;
+}
+.offer-actions a { margin-right: 4px; margin-top: 4px; }
+.games-score {
+  font-size: 22px;
+  color: #2d5a86;
+  font-weight: bold;
+}
+.voice-preview {
+  border: 1px dashed #becbda;
+  background: #fbfdff;
+  padding: 8px;
+  margin-top: 8px;
+}
+.market-kpis {
+  padding: 8px;
+}
+.market-kpis .kpi-box { margin-bottom: 8px; }
+@media (max-width: 520px) {
+  .tile-grid { grid-template-columns: 1fr; }
+  .flex-row { display: block; }
+  .bottom-menu a { width: 15.5%; }
+}
