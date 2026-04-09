@@ -1,0 +1,28 @@
+<section class="card">
+  <h2 class="page-title">Покриття, MOS і карта BTS</h2>
+  <p class="muted">Ми оцінюємо не швидкість інтернету, а якість голосу: MOS, стабільність та доступність у складних локаціях.</p>
+</section>
+
+<section class="two-col">
+  <article class="card">
+    <h3>Швидка перевірка регіону</h3>
+    <label>Регіон<select id="coverageRegion"><option>Київ</option><option>Запоріжжя</option><option>Львів</option><option>Одеса</option><option>Дніпро</option></select></label>
+    <div class="result" id="coverageOut">Київ: MOS 4.4, станцій 142, префікс-навантаження 010.</div>
+  </article>
+  <article class="card">
+    <h3>Легенда якості</h3>
+    <ul class="list">
+      <li>4.5+ — кришталевий звук (зелена зона)</li>
+      <li>4.0–4.4 — впевнений зв'язок (жовта зона)</li>
+      <li>нижче 4.0 — потребує оптимізації (червона зона)</li>
+    </ul>
+  </article>
+</section>
+
+<section class="card">
+  <h3>Публічна таблиця BTS</h3>
+  <table class="table">
+    <thead><tr><th>Регіон</th><th>Префікс</th><th>К-сть BTS</th><th>MOS</th></tr></thead>
+    <tbody id="btsTableBody"></tbody>
+  </table>
+</section>

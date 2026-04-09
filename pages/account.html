@@ -1,0 +1,31 @@
+<section class="card">
+  <h2 class="page-title">Особистий кабінет «Мій Гудок»</h2>
+  <p class="muted">Вхід через USSD, журнал дзвінків, антиспам та готівкові сценарії поповнення.</p>
+</section>
+
+<section class="two-col">
+  <article class="card">
+    <h3>25) USSD-авторизація</h3>
+    <label>Номер<input placeholder="070/092/039/010..." /></label>
+    <button id="ussdLoginBtn" class="btn btn--primary">Отримати команду</button>
+    <div id="ussdLoginOut" class="result">Натисніть кнопку для генерації USSD-коду.</div>
+  </article>
+  <article class="card">
+    <h3>26) Стіна розмов</h3>
+    <ul class="list" id="callWall"></ul>
+  </article>
+</section>
+
+<section class="two-col">
+  <article class="card">
+    <h3>27) Блокування спам-ботів</h3>
+    <label><input id="spamSwitch" type="checkbox" style="width:auto" /> Режим «Тільки живі люди»</label>
+    <div id="spamOut" class="result">Режим вимкнено.</div>
+  </article>
+  <article class="card">
+    <h3>28-29) Гучність трубки + готівка кур'єру</h3>
+    <p>Гучність: вмикається USSD-прапорцем на наступний дзвінок.</p>
+    <button class="btn btn--primary" id="cashRefreshBtn">Показати точки готівкового поповнення</button>
+    <div id="cashOut" class="result">Дані ще не запитані.</div>
+  </article>
+</section>
