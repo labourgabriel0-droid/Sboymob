@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Коїорач — голосовий мобільний зв'язок «За Ноги»</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand-block">
+        <div class="logo">К</div>
+        <div>
+          <h1>Коїорач</h1>
+          <p>Українська телеком-компанія голосового зв'язку</p>
+        </div>
+      </div>
+      <div class="badges">
+        <span>Префікси: 070 · 092 · 039 · 010</span>
+        <span>Тариф без інтернету: «За Ноги»</span>
+      </div>
+    </header>
+
+    <nav class="menu" id="menu"></nav>
+
+    <main>
+      <section class="hero card">
+        <h2>Сайт-концепт: детальна digital-екосистема Коїорач</h2>
+        <p>
+          Це демонстраційний концепт сайту для телеком-бренду, що спеціалізується на
+          голосовій мобільній мережі без пакетів мобільного інтернету. Усі розділи
+          нижче завантажуються через AJAX без повного перезавантаження сторінки.
+        </p>
+      </section>
+
+      <section class="layout-grid card">
+        <h3>Розділи (інфоархітектура)</h3>
+        <ul id="layoutList" class="pill-list"></ul>
+      </section>
+
+      <section class="features card">
+        <div class="section-head">
+          <h3>30 функцій, закладених у концепт</h3>
+          <input id="featureSearch" type="search" placeholder="Пошук функції..." />
+        </div>
+        <ul id="featureList" class="feature-list"></ul>
+      </section>
+
+      <section class="interactive card">
+        <div class="split">
+          <div>
+            <h3>Швидкі інструменти</h3>
+            <div class="tools">
+              <article>
+                <h4>Перевірка номера на префікс</h4>
+                <input id="prefixInput" type="text" placeholder="Введіть номер, напр. 0921234567" />
+                <button id="checkPrefixBtn">Перевірити</button>
+                <p id="prefixResult" class="result"></p>
+              </article>
+
+              <article>
+                <h4>Калькулятор хвилин «За Ноги»</h4>
+                <label>Базові хвилини на місяць
+                  <input id="baseMinutes" type="number" min="0" value="200" />
+                </label>
+                <label>Дзвінки на інші мережі
+                  <input id="otherMinutes" type="number" min="0" value="60" />
+                </label>
+                <button id="calcBtn">Розрахувати</button>
+                <p id="calcResult" class="result"></p>
+              </article>
+            </div>
+          </div>
+
+          <aside class="ajax-panel">
+            <div class="section-head">
+              <h3>AJAX-сторінки</h3>
+              <select id="pageSelect"></select>
+            </div>
+            <div id="ajaxPage" class="ajax-content"></div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Концепт підготовлено для бренду «Коїорач». Всі дані — демонстраційні макети для
+        опрацювання UX/UI, структури та контент-стратегії.
+      </p>
+    </footer>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
