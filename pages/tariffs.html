@@ -1,0 +1,35 @@
+<section class="card">
+  <h2 class="page-title">Тарифи. Чесно про гроші</h2>
+  <p class="muted">Без прихованих умов, без інтернет-пакетів. Тільки хвилини, SMS та зрозуміле списання.</p>
+</section>
+
+<section class="two-col">
+  <article class="card">
+    <h3>Тарифна лінійка</h3>
+    <table class="table">
+      <thead><tr><th>Тариф</th><th>Абонплата</th><th>В мережі</th><th>На інші мережі</th><th>SMS</th></tr></thead>
+      <tbody id="tariffTableBody"></tbody>
+    </table>
+  </article>
+  <article class="card">
+    <h3>21-24) Конструктор і калькулятор</h3>
+    <label>Оберіть тариф <select id="tariffSelect"></select></label>
+    <label>Хвилини на інші мережі/міс <input id="offnetMinutes" type="number" min="0" value="120" /></label>
+    <button class="btn btn--primary" id="tariffCalcBtn">Розрахувати</button>
+    <div class="result" id="tariffCalcOut">Оберіть тариф та хвилини.</div>
+    <p class="notice">Вічний пакет: 300 хв за 200 грн на 12 місяців без щомісячної абонплати.</p>
+  </article>
+</section>
+
+<section class="card">
+  <h3>Порівняння з конкурентами (голосова смуга)</h3>
+  <table class="table">
+    <thead><tr><th>Оператор</th><th>Хвилина на інші мережі</th><th>Орієнтація</th></tr></thead>
+    <tbody>
+      <tr><td>За Ноги</td><td>від 0.60 грн</td><td>Тільки голос</td></tr>
+      <tr><td>Київстар (ринковий орієнтир)</td><td>від 1.00 грн</td><td>Дата + голос</td></tr>
+      <tr><td>Vodafone (ринковий орієнтир)</td><td>від 0.90 грн</td><td>Дата + голос</td></tr>
+      <tr><td>Lifecell (ринковий орієнтир)</td><td>від 0.95 грн</td><td>Дата + голос</td></tr>
+    </tbody>
+  </table>
+</section>
