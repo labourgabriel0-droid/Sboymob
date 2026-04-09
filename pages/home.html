@@ -1,0 +1,135 @@
+<section class="card">
+  <h2 class="page-title">Головна сторінка — 20 функціональних блоків лендингу</h2>
+  <p class="muted">Ностальгія кнопкових телефонів + сучасний UX без перевантаження, з великими кнопками та зрозумілою типографікою для всіх поколінь.</p>
+</section>
+
+<section class="grid">
+  <article class="block">
+    <h3>1) Хедер «Стрічка Часу»</h3>
+    <p>Перемикач режиму Nokia 3310 розташований у шапці, адаптований для слабозорих.</p>
+    <p class="muted">Індикатор «Ефір зараз» показує активні голосові дзвінки по Україні в реальному часі.</p>
+  </article>
+
+  <article class="block">
+    <h3>2) Мега-оффер «Тариф Без Зайвого»</h3>
+    <label>Повзунок Базіки (хвилини)
+      <input id="talkSlider" type="range" min="0" max="1000" value="300" />
+    </label>
+    <div class="result" id="sliderResult">300 хв = 45 грн/міс. І жодного мегабайту.</div>
+  </article>
+
+  <article class="block">
+    <h3>3) Колесо Фортуни «Чарівний Номер»</h3>
+    <label>Оберіть префікс
+      <select id="magicPrefix">
+        <option>070</option><option>092</option><option>039</option><option>010</option>
+      </select>
+    </label>
+    <button class="action" id="generateNumberBtn">Згенерувати красивий номер</button>
+    <div class="result" id="generatedNumber">Готово до генерації</div>
+    <p class="muted" id="reserveTimer">Резерв неактивний</p>
+  </article>
+
+  <article class="block">
+    <h3>4) «За Ноги» проти «Мобільного Шуму»</h3>
+    <label>Скільки ГБ ви зазвичай купуєте щомісяця?
+      <input id="gbInput" type="number" min="0" value="8" />
+    </label>
+    <button class="action" id="calcSaveBtn">Порахувати річну економію</button>
+    <div class="result" id="saveResult">Введіть ГБ для розрахунку.</div>
+  </article>
+
+  <article class="block">
+    <h3>5) Вітрина «Телефони, що не Розумні»</h3>
+    <input id="phoneFilter" placeholder="Пошук: SOS, ліхтарик, бренд..." />
+    <ul id="phoneList" class="clean"></ul>
+  </article>
+
+  <article class="block">
+    <h3>6) Карта покриття голосу (MOS)</h3>
+    <p>Зелені зони: «кришталевий звук», жовті: «впевнений зв'язок».</p>
+    <p class="muted">Окремий шар підвалів/товстих стін для реалістичного сценарію використання.</p>
+  </article>
+
+  <article class="block">
+    <h3>7) Аудіо-привітання</h3>
+    <p>Демо-тест якості кодека HD Voice з реального 070 номера підтримки.</p>
+    <button class="action" id="callTestBtn">Запустити тестовий дзвінок</button>
+    <div class="result" id="callTestResult">Очікує запуску.</div>
+  </article>
+
+  <article class="block">
+    <h3>8) «Родинний Помічник»</h3>
+    <p>Замовлення SIM для батьків із профілем «Тільки Прийом» і білим списком 4 номерів дітей.</p>
+  </article>
+
+  <article class="block">
+    <h3>9) «Екстрені Коди» 010 / 039</h3>
+    <p>Пояснюємо роль префіксів для міських ліній та таксофонів у межах мережі.</p>
+  </article>
+
+  <article class="block">
+    <h3>10) Інтерактивна інструкція SIM</h3>
+    <p>Відео-гайд у стилі телепрограми «Клуб кіномандрівників» для користувачів, які давно не ставили SIM.</p>
+  </article>
+
+  <article class="block">
+    <h3>11) Віджет «Вгадай мелодію»</h3>
+    <p>MIDI-вікторина 2007 року. Приз у демо: +10 бонусних хвилин.</p>
+  </article>
+
+  <article class="block">
+    <h3>12) Реферальна «Привів за Вухо»</h3>
+    <button class="action" id="refBtn">Згенерувати промокод</button>
+    <div class="result" id="refOut">Промокод ще не створено.</div>
+  </article>
+
+  <article class="block">
+    <h3>13) Перевірка балансу голосом</h3>
+    <label>Номер телефону
+      <input id="balanceNumber" placeholder="Напр. 0921234567" />
+    </label>
+    <button class="action" id="voiceBalanceBtn">Запустити автообдзвін</button>
+    <div class="result" id="balanceResult">Очікує номер.</div>
+  </article>
+
+  <article class="block">
+    <h3>14) «Передзвоніть мені, я в роумінгу»</h3>
+    <p>Швидка форма на безкоштовний callback від оператора по голосовому роумінгу.</p>
+  </article>
+
+  <article class="block">
+    <h3>15) Погода для пенсіонерів</h3>
+    <select id="weatherSelect">
+      <option value="kyiv">Київ</option>
+      <option value="lviv">Львів</option>
+      <option value="odesa">Одеса</option>
+    </select>
+    <div id="weatherText" class="result">У Києві: хмарно, візьміть парасольку. І не забудьте зателефонувати онукам з 092.</div>
+  </article>
+
+  <article class="block">
+    <h3>16) Табло «Час Розмов Країни»</h3>
+    <p>Години підсумовуються з початку доби, оновлення кожні 10 хвилин.</p>
+  </article>
+
+  <article class="block">
+    <h3>17) «Книга Скарг і Слухавок»</h3>
+    <p>Можливість записати голосове звернення з мікрофона ПК без набору тексту.</p>
+  </article>
+
+  <article class="block">
+    <h3>18) Додаток «Дзвонилка»</h3>
+    <p>APK 2.5 МБ (Android 4.4): лише баланс і тривалість останнього дзвінка.</p>
+  </article>
+
+  <article class="block">
+    <h3>19) «Пряма Лінія» на радіо</h3>
+    <div class="result" id="lineTimer">До «Прямої лінії»: розрахунок...</div>
+  </article>
+
+  <article class="block">
+    <h3>20) Футер «Наші Кнопки»</h3>
+    <p>Без Instagram/TikTok. Натомість: Viber-спільнота, Telegram-канал, телефон директора 092 100 00 01.</p>
+  </article>
+</section>
