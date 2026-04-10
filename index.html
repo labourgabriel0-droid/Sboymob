@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>КОІОРАЧ — голосовий мобільний зв’язок «За Ноги»</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand-wrap">
+      <div class="logo">К</div>
+      <div>
+        <h1>КОІОРАЧ</h1>
+        <p>Українська телеком-компанія голосового зв’язку</p>
+      </div>
+    </div>
+    <div class="badges">
+      <span class="badge">Префікс 070</span>
+      <span class="badge">Префікс 092</span>
+      <span class="badge">Префікс 039</span>
+      <span class="badge">Префікс 010</span>
+    </div>
+  </header>
+
+  <nav class="main-nav" aria-label="Головна навігація">
+    <button data-page="home" class="nav-btn is-active">Головна</button>
+    <button data-page="tariffs" class="nav-btn">Тарифи</button>
+    <button data-page="coverage" class="nav-btn">Покриття</button>
+    <button data-page="numbers" class="nav-btn">Номери</button>
+    <button data-page="business" class="nav-btn">Бізнес</button>
+    <button data-page="support" class="nav-btn">Підтримка</button>
+    <button data-page="concept" class="nav-btn">Концепт</button>
+  </nav>
+
+  <section class="hero card">
+    <h2>Тариф «За Ноги» — тільки голос, жодного мобільного інтернету</h2>
+    <p>
+      Ми фокусуємось на стабільному голосовому зв’язку для щоденних розмов: родина,
+      робота, безпека, простота.
+    </p>
+    <div class="hero-actions">
+      <button id="quickConnect" class="primary">Підключити за 3 хвилини</button>
+      <button id="openTariffCalc">Порахувати вартість</button>
+    </div>
+  </section>
+
+  <main id="app" class="page-container card" aria-live="polite"></main>
+
+  <aside class="widgets-grid">
+    <section class="card">
+      <h3>Калькулятор тарифу</h3>
+      <label>
+        Хвилин на місяць
+        <input type="range" id="minutesRange" min="50" max="3000" value="500" />
+      </label>
+      <p><strong id="minutesOut">500</strong> хв/міс</p>
+      <p>Рекомендований пакет: <strong id="recommendedPack">Говори 500</strong></p>
+      <p>Орієнтовна сума: <strong id="estimatedPrice">135 ₴</strong></p>
+    </section>
+
+    <section class="card">
+      <h3>Перевірка номера</h3>
+      <label for="phoneInput">Введіть номер (формат +380...)</label>
+      <input id="phoneInput" placeholder="+380701234567" />
+      <button id="checkPrefix">Перевірити префікс</button>
+      <p id="prefixResult"></p>
+    </section>
+
+    <section class="card">
+      <h3>Зворотній дзвінок</h3>
+      <form id="callbackForm">
+        <label>
+          Ім’я
+          <input name="name" required />
+        </label>
+        <label>
+          Телефон
+          <input name="phone" required />
+        </label>
+        <label>
+          Зручний час
+          <select name="time">
+            <option>09:00–12:00</option>
+            <option>12:00–15:00</option>
+            <option>15:00–18:00</option>
+            <option>18:00–21:00</option>
+          </select>
+        </label>
+        <button class="primary" type="submit">Замовити дзвінок</button>
+      </form>
+      <p id="callbackResult"></p>
+    </section>
+  </aside>
+
+  <footer class="footer card">
+    <div>
+      <strong>КОІОРАЧ, Україна</strong>
+      <p>Ліцензований оператор голосової мобільної мережі без data-пакетів.</p>
+    </div>
+    <div>
+      <p>Контакт-центр: 0 800 300 010</p>
+      <p>Екстрений короткий номер: 010</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
