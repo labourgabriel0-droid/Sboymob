@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Койорач — голосовий оператор «За Ноги»</title>
+    <meta
+      name="description"
+      content="Койорач — український оператор голосового мобільного зв'язку без інтернету. Префікси: 070, 092, 039, 010."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">
+        <span class="brand-mark">К</span>
+        <div>
+          <h1>Койорач</h1>
+          <p>Голосова мобсвязь без інтернету</p>
+        </div>
+      </div>
+      <nav>
+        <button data-route="home" class="nav-link active">Головна</button>
+        <button data-route="tariffs" class="nav-link">Тарифи</button>
+        <button data-route="features" class="nav-link">30 функцій</button>
+        <button data-route="coverage" class="nav-link">Покриття</button>
+        <button data-route="support" class="nav-link">Підтримка</button>
+        <button data-route="about" class="nav-link">Про компанію</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero card">
+        <h2>Тариф «За Ноги» — коли потрібен саме голос</h2>
+        <p>
+          Ми не продаємо мобільний інтернет. Ми продаємо чистий голосовий сервіс для тих,
+          кому важливі дзвінки, стабільність і простота. Національні префікси Койорач:
+          <strong>070</strong>, <strong>092</strong>, <strong>039</strong>, <strong>010</strong>.
+        </p>
+        <div class="badges">
+          <span>Українська компанія</span>
+          <span>Без мобільного інтернету</span>
+          <span>VoLTE для дзвінків</span>
+          <span>24/7 підтримка</span>
+        </div>
+      </section>
+
+      <section class="layout">
+        <aside class="card sidebar">
+          <h3>Швидкі дії</h3>
+          <button id="btn-load-tariff">Показати лінійку «За Ноги»</button>
+          <button id="btn-toggle-theme">Змінити тему</button>
+          <button id="btn-open-modal">Заявка на підключення</button>
+          <button id="btn-random-tip">Порада дня</button>
+          <div id="tip-box" class="tip-box"></div>
+        </aside>
+
+        <section class="card content">
+          <div id="ajax-status" aria-live="polite"></div>
+          <div id="app-root"></div>
+        </section>
+      </section>
+    </main>
+
+    <dialog id="join-modal">
+      <form method="dialog" id="join-form">
+        <h3>Підключення до Койорач</h3>
+        <label>Ім'я <input name="name" required /></label>
+        <label>Телефон <input name="phone" required placeholder="+380" /></label>
+        <label>Місто <input name="city" required /></label>
+        <label>Бажаний префікс
+          <select name="prefix">
+            <option>070</option>
+            <option>092</option>
+            <option>039</option>
+            <option>010</option>
+          </select>
+        </label>
+        <menu>
+          <button value="cancel">Скасувати</button>
+          <button value="submit">Відправити</button>
+        </menu>
+      </form>
+    </dialog>
+
+    <footer>
+      <p>© 2026 Койорач, Україна. Концепт демонстраційного сайту.</p>
+      <p>Префікси: 070 / 092 / 039 / 010 • Тарифний бренд: «За Ноги»</p>
+    </footer>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
