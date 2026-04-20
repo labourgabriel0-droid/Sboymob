@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0" />
+    <title>WAP LLM Hub</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="bar bar--top">
+      <div class="logo">WAP LLM Hub</div>
+      <div class="muted" id="clock"></div>
+    </header>
+
+    <nav class="bar nav" aria-label="Навигация">
+      <a href="#chat" data-route="chat" class="nav__link nav__link--active">Чат</a>
+      <a href="#history" data-route="history" class="nav__link">История</a>
+      <a href="#settings" data-route="settings" class="nav__link">Настройки</a>
+    </nav>
+
+    <main id="app" class="screen" aria-live="polite"></main>
+
+    <template id="tpl-chat">
+      <section class="panel">
+        <h1 class="title">Общение с моделями</h1>
+
+        <div class="grid grid--2">
+          <label class="field">
+            <span>Режим мышления</span>
+            <select id="thinkingMode">
+              <option value="fast">Быстро</option>
+              <option value="balanced" selected>Сбалансировано</option>
+              <option value="deep">Глубокий анализ</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span>Источник ответа</span>
+            <select id="responseMode">
+              <option value="single" selected>Одна модель</option>
+              <option value="multi">Несколько моделей сразу</option>
+            </select>
+          </label>
+        </div>
+
+        <fieldset class="models">
+          <legend>Выбор моделей</legend>
+          <label><input type="checkbox" value="GPT-5.3-Codex" checked /> GPT-5.3-Codex</label>
+          <label><input type="checkbox" value="Claude 3.7 Sonnet" /> Claude 3.7 Sonnet</label>
+          <label><input type="checkbox" value="Gemini 2.5 Pro" /> Gemini 2.5 Pro</label>
+          <label><input type="checkbox" value="Llama 4" /> Llama 4</label>
+        </fieldset>
+
+        <div class="row">
+          <label class="check"><input type="checkbox" id="webSearch" /> Поиск в интернете</label>
+          <label class="check"><input type="checkbox" id="selfRefine" checked /> Самоулучшение ответа</label>
+          <label class="check"><input type="checkbox" id="splitView" /> Сравнение ответов</label>
+        </div>
+
+        <div class="chat" id="chatLog" role="log" aria-label="История сообщений"></div>
+
+        <form id="chatForm" class="composer">
+          <div class="composer__tools">
+            <label for="photoInput" class="btn btn--tool">+ Фото</label>
+            <input type="file" id="photoInput" accept="image/*" hidden />
+            <span id="photoLabel" class="muted">Файл не выбран</span>
+          </div>
+          <textarea
+            id="prompt"
+            required
+            rows="3"
+            placeholder="Напишите вопрос..."
+          ></textarea>
+          <button class="btn" type="submit">Отправить (AJAX)</button>
+        </form>
+      </section>
+    </template>
+
+    <template id="tpl-history">
+      <section class="panel">
+        <h1 class="title">История диалогов</h1>
+        <div id="historyList" class="history"></div>
+        <button id="clearHistory" class="btn btn--danger">Очистить историю</button>
+      </section>
+    </template>
+
+    <template id="tpl-settings">
+      <section class="panel">
+        <h1 class="title">Настройки интерфейса</h1>
+        <label class="field">
+          <span>WAP тема</span>
+          <select id="themeSelect">
+            <option value="green" selected>Classic Green</option>
+            <option value="blue">Blue Classic</option>
+            <option value="dark">Dark WAP</option>
+          </select>
+        </label>
+        <label class="check"><input type="checkbox" id="compactMode" /> Компактный режим</label>
+        <p class="muted">
+          Интерфейс использует XHTML/WAP-настроение: простые блоки, маленькие кнопки, чёткие границы,
+          минимум перегруза.
+        </p>
+      </section>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>
